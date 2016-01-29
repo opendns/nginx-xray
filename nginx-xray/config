@@ -1,0 +1,8 @@
+# Copyright (C) OpenDNS Inc.
+
+ngx_addon_name=ngx_http_xray_module
+HTTP_MODULES="$HTTP_MODULES ngx_http_xray_module"
+
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/ngx_http_xray.c"
+NGX_ADDON_DEPS="$NGX_ADDON_DEPS $ngx_addon_dir/ngx_http_xray.h"
+CORE_INCS="$CORE_INCS $ngx_addon_dir"
